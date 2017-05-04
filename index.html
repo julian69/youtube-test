@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>Space Test</title>
+
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="./js/script.js"></script>
+
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Oleo+Script" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="./scss/main.css">
+
+</head>
+<body>
+
+	<header class="page-header">
+		<h1>Youtube Test <span>!</span></h1>
+	</header>
+
+	<section class="container video-app">
+		<div class="row">
+
+			<div class="col-md-12">
+				<form class="searchForm">
+
+					<div class="row fancy-input">
+					    <input type="text" name="fancy-text" name="searchVal" class="form-control searchBox" placeholder="What are you looking for?..." >
+					    <label for="fancy-text">Search</label>
+					</div>
+
+				</form>
+			</div>
+		
+			<div class="col-sm-8 videosList-wrapper">
+
+				<ul class="videosList list"></ul>
+
+				<button type="button" class="btn" id="prevBtn" value="" >Prev</button>
+				<button type="button" class="btn"id="nextBtn" value="" >Next</button>
+
+			</div>
+
+			<div class="col-sm-4 aside-lists">
+			
+				<div class="col-sm-12">
+					<h4>Stuff you may like</h4>
+					<ul class="relatedVideos list"></ul>
+				</div>
+				
+				<div class="col-sm-12">
+					<h4>Most recent searches</h4>
+					<ul class="recent"></ul>
+				</div>
+
+			</div>
+
+		</div>
+	</section>
+
+	<footer></footer>
+
+	<div class="modal">
+
+		<!-- <button class="btn close">Close</button> -->
+
+		<div class="videoWrapper">
+			<iframe id="videoFrame" src="" frameborder="0"></iframe>
+		</div>
+	</div>
+
+
+</body>
+</html>

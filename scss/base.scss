@@ -1,0 +1,50 @@
+//Responsive
+$mobileSmallWidth: 320px;
+$mobileWidth: 560px;
+$tabletWidth: 768px;
+$desktopWidth: 1024px;
+
+@mixin mobileSmall {
+    @media (max-width: #{$mobileSmallWidth}) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media (max-width: #{$mobileWidth}) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (max-width: #{$tabletWidth}) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (max-width: #{$desktopWidth}) {
+        @content;
+    }
+}
+
+
+// Custom stuff
+$custom-easing: cubic-bezier(1, .1, 0, 0.9);
+$custom-gray: #707e86;
+$base-red: #ef6f6f;
+$darker-red: #f17f7f;
+
+
+//==============================================
+body{
+	background-color: $base-red;
+	color: #fff;
+}
+
+ul{
+	list-style-type: none;
+	padding: 0;
+}
+
+

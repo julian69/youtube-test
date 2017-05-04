@@ -1,0 +1,83 @@
+.aside-lists{
+	@include tablet{
+		text-align: center;
+	}	
+
+	& > div{
+		margin-bottom: 50px;
+	}
+
+	.relatedVideos{
+		background: $darker-red;
+		padding: 15px;
+		min-width: 220px;
+
+		@include tablet{
+			max-width: 320px;
+			margin: 0 auto;
+		}
+
+		li{
+			margin-bottom: 15px;
+
+			&:hover{
+				opacity: .7;
+				cursor: pointer;
+			}
+
+			&:last-child{
+				margin-bottom: 0;
+			}
+
+			.col-sm-4{
+				padding: 0;
+			}
+
+			.col-sm-8{
+				@include tablet{
+					padding: 0;
+				}
+			}
+
+			img{
+				min-width: 70px;
+
+				@include tablet{
+					width: 70px;
+				}					
+			}
+		}
+
+		dt{
+			width: 100%;
+		    white-space: nowrap;
+		    overflow: hidden;
+		    text-overflow: ellipsis;
+		}
+
+		dd{
+			display: none;	
+		}
+	}
+
+	.recent{
+		background: $darker-red;
+		padding: 15px;
+		min-width: 220px;
+
+		@include tablet{
+			max-width: 320px;
+			margin: 0 auto;
+		}
+
+		li{
+			padding-top: 10px;
+			padding-bottom: 10px;
+
+			&:hover{
+				opacity: .7;
+				cursor: pointer;
+			}
+		}
+	}
+}
