@@ -11,12 +11,10 @@ searchVideoTest.Common = {
        
         this.defaultVideos();
 
-        var flag = 0;
-
         $(".searchForm").on("submit", function() {
 
             var query = $(".searchBox").val();
-
+            
             searchVideoTest.Common.recent(query);
             searchVideoTest.Common.clearList('list');
             searchVideoTest.Common.callingAPI(query);

@@ -15,41 +15,20 @@
 		input{
 			width: 100%;
 			height: 40px;
-			padding: 10px 10px 10px 90px;
+			padding: 10px;
 			box-sizing: border-box;
 			border: none;
 			color: #333;
 			border-radius: 3px;
-			transition: all 0.3s $custom-easing;
+		}
 
-			& + label{
-			    position: absolute;
-			    top: 0;
-			    bottom: 0;
-			    left: 0;
-			    height: 40px;
-			    line-height: 40px;
-			    font-size: 12px;
-			    font-weight: bold;
-			    width: 80px;
-			    text-shadow: 0 0 2px rgba(0,0,0,0.1);
-			    text-align: center;
-			    text-transform: uppercase;
-			    letter-spacing: .05em;
-			    color: white;
-			    background: $custom-gray;
-			    border-radius: 3px 0 0 3px;
-			    transition: all 0.3s $custom-easing;
-			    transform: translateZ(0) translateX(0);
-			}
+		.btn{
+			height: 40px;
+			outline: none;
 
+			&:hover,
 			&:focus{
-			    padding-left: 10px; 
-			}
-			  
-
-			&:focus + label{
-			    transform: translateZ(0) translateX(-100%);
+				color: $base-red;
 			}
 		}
 	}
